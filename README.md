@@ -496,10 +496,9 @@ Before running the project, make sure you have:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/aws-bedrock-customer-support-agent.git
+git clone https://github.com/DhruvParekh-star/aws-bedrock-customer-support-agent.git
 cd aws-bedrock-customer-support-agent
 ```
-*Replace `<YOUR-GITHUB-USERNAME>` with your actual GitHub username.*
 
 ### Create a Virtual Environment
 
