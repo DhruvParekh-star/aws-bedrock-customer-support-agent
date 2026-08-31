@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "id": "faq-return-policy",
+      "prompt": "What is your return policy?",
+      "expected": "Answer the question using the FAQ. Explain that most items can be returned within 30 days of delivery if they are unused and in original packaging, unless the item arrived defective."
+    },
+    {
+      "id": "faq-track-order",
+      "prompt": "How do I track my order?",
+      "expected": "Answer using the FAQ. Explain that a tracking link is emailed once the order ships, and customers with an account can also find tracking under My Orders."
+    },
+    {
+      "id": "bug-checkout",
+      "prompt": "The checkout button is not working. I click it but nothing happens.",
+      "expected": "Treat this as a bug report. Do not call the bug-report tool yet because the customer has not provided steps to reproduce and the environment. Ask for one missing piece of information at a time."
+    },
+    {
+      "id": "bug-complete",
+      "prompt": "The checkout button does not work. To reproduce it, I add an item to my cart, go to checkout, and click the Place Order button, but nothing happens. I am using Windows 11 with Chrome on a laptop.",
+      "expected": "Treat this as a bug report. The customer has provided the bug description, steps to reproduce, and environment. Call the create_bug_report tool with these three pieces of information. After successful tool execution, tell the customer the bug was submitted and provide the ticket ID returned by the tool. Do not invent a ticket ID."
+    },
+    {
+      "id": "out-of-scope",
+      "prompt": "Can you recommend a good movie to watch tonight?",
+      "expected": "Treat this as an unsupported request and politely direct the customer to human customer support. Do not attempt to answer the movie question."
+    },
+    {
+      "id": "faq-unsupported",
+      "prompt": "Can I change the delivery driver assigned to my package?",
+      "expected": "If the FAQ does not provide information about changing the delivery driver, do not invent an answer. Politely direct the customer to human support."
+    }
+  ]
+}
